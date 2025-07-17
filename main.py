@@ -9,7 +9,7 @@ with open("rarity_ranks.json", "r") as f:
 TOTAL_NFTS = 10000  # Adjust if needed
 
 # Get bot token from environment variable
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("7763462069:AAGGX-_VFKLfqe-xqEytL7dXLfKHo1Ozj2A")
 
 # /start command
 async def start(update, context):
