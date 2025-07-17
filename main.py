@@ -21,6 +21,7 @@ async def rarity(update, context):
         nft_id = int(context.args[0])
         rank = id_to_rank.get(str(nft_id))
         if rank:
+            await update.message.reply_text(f"NFT#: {nft_id}")
             await update.message.reply_text(f"Rarity rank: {rank}/{TOTAL_NFTS}")
         else:
             await update.message.reply_text("❌ NFT ID not found.")
