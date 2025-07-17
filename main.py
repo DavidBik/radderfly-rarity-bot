@@ -9,7 +9,7 @@ with open("rarity_ranks.json", "r") as f:
 TOTAL_NFTS = 10000  # Adjust if needed
 
 # Get bot token from environment variable
-TOKEN = os.getenv("7763462069:AAGGX-_VFKLfqe-xqEytL7dXLfKHo1Ozj2A")
+# TOKEN = os.getenv("7763462069:AAGGX-_VFKLfqe-xqEytL7dXLfKHo1Ozj2A")
 
 # /start command
 async def start(update, context):
@@ -29,7 +29,7 @@ async def rarity(update, context):
 
 # Main function
 def main():
-    app = ApplicationBuilder().token(TOKEN).build()
+    app = ApplicationBuilder().token("7763462069:AAGGX-_VFKLfqe-xqEytL7dXLfKHo1Ozj2A").build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("rarity", rarity))
     app.run_polling()
